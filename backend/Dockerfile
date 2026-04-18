@@ -9,5 +9,5 @@ RUN mvn -B -DskipTests package
 
 FROM eclipse-temurin:21-jdk
 WORKDIR /app
-COPY target/*.jar backend.jar
+COPY --from=build /app/target/*.jar backend.jar
 ENTRYPOINT ["java","-jar","backend.jar"]

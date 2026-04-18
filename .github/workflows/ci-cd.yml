@@ -103,7 +103,7 @@ jobs:
         id: meta-backend
         uses: docker/metadata-action@v5
         with:
-          images: ghcr.io/${{ github.repository_owner }}/minishop-backend
+          images: ghcr.io/${{ github.repository_owner }}/minishop-backend-loibner
           tags: |
             type=raw,value=latest
             type=sha
@@ -120,7 +120,7 @@ jobs:
         id: meta-frontend
         uses: docker/metadata-action@v5
         with:
-          images: ghcr.io/${{ github.repository_owner }}/minishop-frontend
+          images: ghcr.io/${{ github.repository_owner }}/minishop-frontend-loibner
           tags: |
             type=raw,value=latest
             type=sha

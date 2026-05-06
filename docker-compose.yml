@@ -1,10 +1,12 @@
 services:
   backend:
-    build: ./backend
+    #build: ./backend
+    image: ghcr.io/ingenium-2409-syp-students/minishop-backend-loibner:latest
     ports:
       - "8080:8080"
 
   frontend:
-    build: ./frontend
+    #build: ./frontend
+    image: ghcr.io/ingenium-2409-syp-students/minishop-frontend-loibner:latest
     ports:
       - "5173:80"
